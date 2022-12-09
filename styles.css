@@ -1,0 +1,256 @@
+:root {
+  --header-color: #f6a734;
+  --primary-color: #185376;
+  --main-color: #ececec;
+
+  --green-color: #42ecae;
+  --brown-color: #d2b48c;
+  --blue-color: #87ceeb;
+  --orange-color: #ffa500;
+  --red-color: #ff6347;
+  --grey-color: #708090;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--main-color);
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.c1,
+.c2,
+.c3,
+.c4,
+.c5,
+.c6,
+.c7,
+.c8 {
+  width: 100%;
+  min-width: 150px;
+  height: 150px;
+}
+
+.c1 {
+  background-color: var(--header-color);
+  background-image: url("./Images/faro.png");
+  background-position: 90% 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  padding: 0 20px;
+  position: relative;
+}
+.c1 button {
+  width: 50px;
+  font-size: 1rem;
+  border: solid 2px var(--primary-color);
+  border-radius: 25px;
+  padding: 5px;
+  background-color: transparent;
+  color: var(--primary-color);
+  font-weight: bold;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+.c1 h1 {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.c1 p {
+  color: white;
+  font-size: 1.3rem;
+}
+
+.c2 {
+  color: var(--primary-color);
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.c2 h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  font-size: 1.8rem;
+}
+
+.c2 p {
+  color: var(--primary-color);
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+}
+
+.c3 {
+  background-color: var(--green-color);
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.c4 {
+  background-color: var(--brown-color);
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.c5 {
+  background-color: var(--blue-color);
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.c6 {
+  background-color: var(--orange-color);
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.c7 {
+  background-color: var(--red-color);
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.c8 {
+  background-color: var(--grey-color);
+  text-align: center;
+  padding: 30px 20px;
+}
+
+section {
+  position: relative;
+}
+
+section img {
+  width: 60px;
+  height: 60px;
+}
+
+section p {
+  color: white;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  font-size: 1.3rem;
+}
+
+.views {
+  position: absolute;
+  bottom: 5px;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+}
+
+.views img {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+footer {
+  background-color: var(--primary-color);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  padding: 20px 20px;
+}
+
+.about h4 {
+  padding: 5px 0;
+}
+
+.about ul {
+  list-style: none;
+}
+
+.about ul li {
+  padding: 5px 0;
+}
+
+.about ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.contact h4 {
+  padding: 5px 0;
+}
+
+.contact ul {
+  list-style: none;
+}
+
+.contact ul li {
+  padding: 5px 0;
+}
+
+.contact ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (min-width: 600px) {
+  html {
+    font-size: 80%;
+  }
+  .c1 {
+    text-align: center;
+  }
+  .c3,
+  .c4,
+  .c5,
+  .c6,
+  .c7,
+  .c8 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 800px) {
+  html {
+    font-size: 85%;
+  }
+  .c1 button {
+    width: 100px;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .c3,
+  .c4,
+  .c5,
+  .c6,
+  .c7,
+  .c8 {
+    width: 25%;
+    margin: 25px;
+    height: 200px;
+    cursor: pointer;
+  }
+  .container {
+    justify-content: center;
+  }
+
+  footer {
+    justify-content: end;
+  }
+  footer .about {
+    padding-right: 30px;
+  }
+}
